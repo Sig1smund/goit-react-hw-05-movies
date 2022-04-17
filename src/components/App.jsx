@@ -4,12 +4,12 @@ import Header from './Header/header';
 import Container from './Container/container';
 import Spinner from './Spinner/spinner';
 
-const Home = lazy(()=> import('./Home' ));
-const Movies = lazy(() => import('./Movies'))
-const MovieDetails = lazy(() => import('./MovieDetails' ))
-const Cast = lazy(() => import('./Cast' ))
-const Reviews = lazy(() => import('./Reviews'))
-const NotFound = lazy(() => import('./NotFound'))
+const Home = lazy(()=> import('./Home/home' ));
+const Movies = lazy(() => import('./Movies/movies'))
+const MovieDetails = lazy(() => import('./MovieDetails/movieDetails' ))
+const Cast = lazy(() => import('./Cast/cast' ))
+const Reviews = lazy(() => import('./Reviews/reviews'))
+const NotFound = lazy(() => import('./NotFound/notFound'))
 
 export default function App () {
   return (<Container>
