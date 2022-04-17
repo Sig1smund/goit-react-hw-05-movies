@@ -7,7 +7,7 @@ import Spinner from 'components/Spinner/spinner';
 import Button from 'components/Button/button';
 
 export default function MovieDetails() {
-        const [movies, setMovies] = useState()
+    const [movies, setMovies] = useState()
     const moviesId = useParams()
     const location = useLocation()
     const navigate = useNavigate()
@@ -16,7 +16,7 @@ export default function MovieDetails() {
         API.fetchMoviesDetails(moviesId).then(response => setMovies(response))
     }, [moviesId])
 
-    const GoBack = () => {
+    const Return = () => {
       navigate(
         location.state?.from?.pathname
           ? `${location.state?.from?.pathname}${location.state?.from?.search}`
@@ -30,7 +30,7 @@ export default function MovieDetails() {
         {movies &&(
         <>
         <Header text={movies.title}/>
-        <Button type={'button'} children={location?.state?.label ?? 'Go Back'} onClick={GoBack}/>
+        <Button type={'button'} children={location?.state?.label ?? 'Return'} onClick={Return}/>
         <div className={s.containet}>
         <img src={`https://image.tmdb.org/t/p/w342${movies.poster_path}`} alt={movies.title} />
         <div className={s.description}>

@@ -7,7 +7,6 @@ export default function Home() {
     const [trendingMovies, setTrendingMovies] = useState([])
     const location = useLocation()
 
-
     useEffect(() => {
         API.fetchTrendingMovies().then(response => setTrendingMovies(response.results))
     }, [])
