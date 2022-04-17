@@ -1,8 +1,8 @@
 import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom';
-import Header from "./Header";
-import Container from "./Container";
-import Spinner from './Spinner';
+import Header from './Header/header';
+import Container from './Container/container';
+import Spinner from './Spinner/spinner';
 
 const Home = lazy(()=> import('./Home' ));
 const Movies = lazy(() => import('./Movies'))
