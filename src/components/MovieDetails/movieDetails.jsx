@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link,  Outlet, useLocation, useNavigate} from 'react-router-dom';
 import API from 'fetch/fetch';
-import Header from 'components/Header/header';
+import MovieHeading from 'components/MovieHeading/movieHeading';
 import s from "./movieDetails.module.css"
 import Spinner from 'components/Spinner/spinner';
 import Button from 'components/Button/button';
@@ -29,12 +29,13 @@ export default function MovieDetails() {
         {!movies && <Spinner timeout={3000}/>}
         {movies &&(
         <>
-        <Header text={movies.title}/>
+        <MovieHeading text={movies.title}/>
         <Button type={'button'} children={location?.state?.label ?? 'Return'} onClick={Return}/>
-        <div className={s.containet}>
+        <div className={s.container}>
         <img src={`https://image.tmdb.org/t/p/w342${movies.poster_path}`} alt={movies.title} />
         <div className={s.description}>
-            <h2>{movies.title}</h2>
+              <h2>{movies.title}</h2>
+              <p>Release date: {movies.release_date}</p>
               <p>User Score: {movies.vote_average * 10}%</p>
               <h3>Overview</h3>
               <p>{movies.overview}</p>

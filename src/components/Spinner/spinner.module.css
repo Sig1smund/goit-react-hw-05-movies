@@ -12,7 +12,7 @@
 
 .bounce__circle {
     display: inline-block;
-    background-color: purple;
+    background-color: aqua;
     width: 0;
     height: 0;
     border-radius: 50%;
@@ -22,7 +22,7 @@
 }
 
 .bounce__circle:nth-child(2) {
-    background-color: rebeccapurple;
+    background-color: yellow;
     animation-delay: 0.2s;
 }
 

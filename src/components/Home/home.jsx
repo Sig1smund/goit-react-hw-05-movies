@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation} from 'react-router-dom';
 import API from 'fetch/fetch';
-import Header from 'components/Header/header';
+import MovieHeading from 'components/MovieHeading/movieHeading';
 
 export default function Home() {
     const [trendingMovies, setTrendingMovies] = useState([])
@@ -13,7 +13,7 @@ export default function Home() {
 
     return (
         <>
-        <Header text='Trending today'/>
+        <MovieHeading text='Trending today'/>
         {trendingMovies && (
             <ul>
                 {trendingMovies.map(movie => (<li key={movie.id}>
