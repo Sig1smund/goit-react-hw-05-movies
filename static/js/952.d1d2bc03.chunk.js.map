@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/952.d1d2bc03.chunk.js","mappings":"iMAAe,SAASA,IACpB,OAAO","sources":["components/NotFound/notFound.jsx"],"sourcesContent":["export default function NotFound() {\n    return <h2>Русский корабль, иди на#уй!</h2>\n}"],"names":["NotFound"],"sourceRoot":""}

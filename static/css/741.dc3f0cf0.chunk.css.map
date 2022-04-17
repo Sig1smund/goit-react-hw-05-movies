@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/741.dc3f0cf0.chunk.css","mappings":"AAAA,kBACI,kBACJ,CAEA,iBACI,WACJ","sources":["components/Cast/cast.module.css"],"sourcesContent":[".item {\n    margin-bottom: 80px;\n}\n\n.img {\n    width: 150px;\n}"],"names":[],"sourceRoot":""}
