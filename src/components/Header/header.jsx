@@ -3,8 +3,8 @@ import s from './header.module.css';
 
 export default function Header() {
   return (
-    <header className={s.header}>
+    <Header className={s.header}>
       <Navigation />
-    </header>
+    </Header>
   );
 }
