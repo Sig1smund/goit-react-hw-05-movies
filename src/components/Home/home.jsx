@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation} from 'react-router-dom';
 import API from 'fetch/fetch';
-import Header from '../Header';
+import Header from 'components/Header/header';
 
 export default function Home() {
     const [trendingMovies, setTrendingMovies] = useState([])

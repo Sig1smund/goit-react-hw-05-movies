@@ -14,7 +14,7 @@ const Reviews = lazy(() => import('./Reviews' ))
 export default function App () {
   return (<Container>
       <Header/>
-      <Suspense fallback={<Spinner timeout={3000}/>}>
+      <Suspense fallback={<Spinner timeout={2000}/>}>
       <Routes>
         <Route index path="/" element={<Home/>}/>
         <Route path="/movies" element={<Movies/>}/> 
