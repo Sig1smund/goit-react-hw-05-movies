@@ -10,7 +10,8 @@ export default function ListMovies({search}) {
             return;
         }
 
-        API.fetchSearchMovie(search).then(data => setMovies(data.results))
+        API.fetchSearchMovie(search)
+            .then(data => setMovies(data.results))
     }, [search])
 
     return (

@@ -12,8 +12,9 @@ const Reviews = lazy(() => import('./Reviews/reviews'))
 const NotFound = lazy(() => import('./NotFound/notFound'))
 
 export default function App () {
-  return (<Container>
-      <Suspense fallback={<Spinner timeout={2000}/>}>
+  return (
+    <Container>
+      <Suspense fallback={<Spinner timeout={3000}/>}>
       <Heading/>
       <Routes>
         <Route index path="/" element={<Home/>}/>
@@ -25,6 +26,5 @@ export default function App () {
         <Route path='*' element={<NotFound/>}/>
       </Routes>
       </Suspense>
-
     </Container>);
 };
