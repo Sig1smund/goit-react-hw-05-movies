@@ -7,9 +7,9 @@ import Spinner from './Spinner/spinner';
 const Home = lazy(()=> import('./Home' ));
 const Movies = lazy(() => import('./Movies'))
 const MovieDetails = lazy(() => import('./MovieDetails' ))
-const NotFound = lazy(() => import('./NotFound'))
 const Cast = lazy(() => import('./Cast' ))
-const Reviews = lazy(() => import('./Reviews' ))
+const Reviews = lazy(() => import('./Reviews'))
+const NotFound = lazy(() => import('./NotFound'))
 
 export default function App () {
   return (<Container>
