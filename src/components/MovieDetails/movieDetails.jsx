@@ -71,13 +71,8 @@ export default function MovieDetails() {
             </ul>
             <Outlet/>
           </div>
-        
-
         </>
         )}
-  
-        
         </>
-
     )
 }

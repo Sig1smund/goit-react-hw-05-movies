@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import Heading from './Heading/heading';
 import Container from './Container/container';
 import Spinner from './Spinner/spinner';
-// import HomePage from './Home/home';
 
 const HomePage = lazy(()=> import('./Home/home' /* webpackChunkName: "home-page" */));
 const MoviesPage = lazy(() => import('./Movies/movies' ))
