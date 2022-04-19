@@ -3,8 +3,9 @@ import { Routes, Route } from 'react-router-dom';
 import Heading from './Heading/heading';
 import Container from './Container/container';
 import Spinner from './Spinner/spinner';
+import HomePage from './Home/home';
 
-const HomePage = lazy(()=> import('./Home/home' ));
+// const HomePage = lazy(()=> import('./Home/home' ));
 const MoviesPage = lazy(() => import('./Movies/movies'))
 const MovieDetailsPage = lazy(() => import('./MovieDetails/movieDetails' ))
 const Cast = lazy(() => import('./Cast/cast' ))
