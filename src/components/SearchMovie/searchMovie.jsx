@@ -15,7 +15,7 @@ export default function SearchMovie({forSearch, search}) {
           }}>
             <input type="text" className={s.search__input}
                 placeholder={search ?? 'Search for a movie...'}
-                onChange={e => setInput(e.target.value)}
+                onChange={e => setInput(e.target.value.trim())}
             />
             <Button type="submit">
                 Search
