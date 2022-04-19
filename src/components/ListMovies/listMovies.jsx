@@ -17,7 +17,6 @@ export default function ListMovies({search}) {
         setSpinner(true);
         API.fetchSearchMovie(search)
             .then(data => {
-                console.log(data)
                 if (data.results.length === 0) {
                     toast.error('Русский корабль, иди на#уй', {
                         position: "top-center",
