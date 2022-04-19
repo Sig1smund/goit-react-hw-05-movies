@@ -6,7 +6,7 @@ export default function SearchMovie({forSearch, search}) {
         const [input, setInput] = useState('');
 
     return (
-        <form className={s.search__from} onSubmit={e => {
+        <form className={s.search__form} onSubmit={e => {
             e.preventDefault();
             if(!input){
                 return;
