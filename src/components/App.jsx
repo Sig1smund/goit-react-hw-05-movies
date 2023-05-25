@@ -7,8 +7,8 @@ import Spinner from '../utils/Spinner/Spinner';
 const HomePage = lazy(()=> import('../pages/Home/Home' /* webpackChunkName: "home-page" */));
 const MoviesPage = lazy(() => import('../pages/Movies/Movies' ))
 const MovieDetailsPage = lazy(() => import('../pages/MovieDetails/MovieDetails' ))
-const Cast = lazy(() => import('../pages/Cast/Cast' ))
-const Reviews = lazy(() => import('../pages/Reviews/Reviews'))
+const Cast = lazy(() => import('./Cast/Cast' ))
+const Reviews = lazy(() => import('./Reviews/Reviews'))
 const NotFound = lazy(() => import('../pages/NotFound/NotFound'))
 
 export default function App () {
