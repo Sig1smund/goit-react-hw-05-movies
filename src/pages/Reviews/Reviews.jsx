@@ -7,8 +7,11 @@ export default function Reviews(){
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
+        if (!moviesId) {
+            return;
+        }
         API.fetchMovieReviews(moviesId).then(data => setReviews([...data.results]))
-    }, [moviesId])
+    }, [moviesId]);
 
     if (reviews.length === 0) {
         return <p>We don't have any reviews for this movie</p>;

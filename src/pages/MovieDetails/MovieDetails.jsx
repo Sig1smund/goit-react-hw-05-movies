@@ -16,9 +16,12 @@ export default function MovieDetails() {
   const backToPrevLinkRef = useRef(location.state?.from ?? '/movies')
 
   useEffect(() => {
+    if (movies) {
+      return;
+    }
     API.fetchMoviesDetails(moviesId).then(response => setMovies(response))
         
-  }, [moviesId]);
+  }, [moviesId, movies]);
 
   const Return = () => {
       navigate(

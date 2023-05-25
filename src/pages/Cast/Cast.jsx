@@ -13,7 +13,7 @@ export default function Cast() {
         API.fetchMovieCast(moviesId).then(data => {
             setCast(data.cast)
         })
-    }, [moviesId])
+    }, [moviesId]);
  
 
     return (
